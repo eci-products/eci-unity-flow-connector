@@ -1,0 +1,142 @@
+/* 操作区域：推送、拉取、截图、状态和说明。 */
+.button-section {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.action-button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 10px;
+    height: 32px;
+    border-radius: 4px;
+    border-width: 1px;
+    -unity-font-style: bold;
+    font-size: 12px;
+    -unity-text-align: middle-center;
+}
+
+.push-button {
+    background-color: rgb(45, 58, 74);
+    color: rgb(111, 179, 207);
+    border-color: rgb(61, 74, 90);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.push-button:hover {
+    background-color: rgb(61, 74, 90);
+    border-color: rgb(111, 179, 207);
+}
+
+.push-button:active {
+    background-color: rgb(29, 42, 58);
+}
+
+.complete-button {
+    background-color: rgb(45, 74, 62);
+    color: rgb(111, 207, 151);
+    border-color: rgb(61, 90, 78);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.complete-button:hover {
+    background-color: rgb(61, 90, 78);
+    border-color: rgb(111, 207, 151);
+}
+
+.complete-button:active {
+    background-color: rgb(29, 58, 46);
+}
+
+.status-button {
+    background-color: rgb(74, 66, 50);
+    color: rgb(207, 179, 111);
+    border-color: rgb(90, 82, 66);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.status-button:hover {
+    background-color: rgb(90, 82, 66);
+    border-color: rgb(207, 179, 111);
+}
+
+.status-button:active {
+    background-color: rgb(58, 50, 34);
+}
+
+.screenShot-button {
+    background-color: rgb(22, 68, 177);
+    color: rgb(186, 230, 253);
+    border-color: 	rgb(71, 110, 199);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.screenShot-button:hover {
+    background-color: rgb(33, 82, 196);
+    border-color: 	rgb(59, 130, 246);
+}
+
+.screenShot-button:active {
+    background-color: rgb(14, 74, 211);
+}
+
+.screenShotDel-button {
+    background-color: rgb(201, 37, 37);
+    color: rgb(252, 165, 165);
+    border-color: rgb(187, 78, 78);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.screenShotDel-button:hover {
+    background-color: rgb(214, 48, 48);
+    border-color: rgb(248, 113, 113);
+}
+
+.screenShotDel-button:active {
+    background-color: rgb(220, 38, 38);
+}
+
+.pull-button {
+    background-color: rgb(58, 45, 74);
+    color: rgb(179, 111, 207);
+    border-color: rgb(74, 61, 90);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pull-button:hover {
+    background-color: rgb(74, 61, 90);
+    border-color: rgb(179, 111, 207);
+}
+
+.pull-button:active {
+    background-color: rgb(42, 29, 58);
+}
+
+.instructions-section {
+    background-color: rgb(30, 30, 30);
+    border-width: 1px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.instructions-label {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: rgb(147, 122, 85);
+    margin-bottom: 8px;
+}
+
+.instruction-text {
+    font-size: 11px;
+    color: rgb(153, 153, 153);
+    white-space: normal;
+}
+

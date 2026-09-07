@@ -1,0 +1,143 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement class="main-container">
+        <ui:Label text="ECI Flow Connector" class="header" />
+        <ui:VisualElement class="tab-bar">
+            <ui:Button name="tabMain" text="Entries" class="tab-button tab-active" />
+            <ui:Button name="tabSettings" text="Settings" class="tab-button" />
+        </ui:VisualElement>
+        <ui:ScrollView name="mainTabContent" mode="Vertical" class="tab-content" style="background-color: rgba(43, 195, 64, 0);">
+            <ui:VisualElement name="mainContainer" style="flex-grow: 1; margin-right: 15px;">
+                <ui:VisualElement name="TableSelcet" class="section" />
+                <ui:VisualElement class="section">
+                    <ui:VisualElement class="row" />
+                </ui:VisualElement>
+                <ui:VisualElement name="tableArea" class="section hidden">
+                    <ui:VisualElement class="button-section" style="max-width:150px;">
+                        <ui:Button name="btnPush" text="Push" class="action-button push-button" />
+                        <ui:Button name="btnPull" text="Pull" class="action-button pull-button" />
+                    </ui:VisualElement>
+                    <ui:ScrollView name="fixedScroll" horizontal-scroller-visibility="Hidden" class="table-scroll-view" style="background-color: rgb(51, 51, 51);">
+                        <ui:VisualElement name="tableHeader" class="table-header" />
+                    </ui:ScrollView>
+                    <ui:ScrollView name="tableScrollView" mode="VerticalAndHorizontal" class="table-scroll-view">
+                        <ui:VisualElement name="tableContent" class="table-content" />
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="importDiffPanel" class="import-diff-panel hidden">
+                    <ui:VisualElement name="importDiffResizeHandle" class="vertical-resize-handle">
+                        <ui:VisualElement class="vertical-resize-grip" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="import-diff-header">
+                        <ui:VisualElement class="import-diff-title-group">
+                            <ui:Label text="Import Differences" class="import-diff-title" />
+                            <ui:Label name="importDiffSummary" class="import-diff-summary" />
+                        </ui:VisualElement>
+                        <ui:Button name="btnImportClose" text="X" class="import-diff-close-button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="import-diff-toolbar">
+                        <ui:Button name="btnImportKeepAllLocal" text="Keep All Local" class="import-diff-toolbar-button import-keep-button" />
+                        <ui:Button name="btnImportUseAllRemote" text="Use All Remote" class="import-diff-toolbar-button import-remote-button" />
+                    </ui:VisualElement>
+                    <ui:ScrollView name="importDiffScroll" mode="Vertical" class="import-diff-scroll">
+                        <ui:VisualElement name="importDiffContent" class="import-diff-content" />
+                    </ui:ScrollView>
+                    <ui:Label name="importDiffValidation" class="import-diff-validation" />
+                    <ui:VisualElement class="import-diff-footer">
+                        <ui:Button name="btnImportCancel" text="Cancel" class="action-button cancel-button" />
+                        <ui:Button name="btnImportMerge" text="Merge &amp; Close" class="action-button save-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:ScrollView name="detailContent" mode="Vertical" class="detailcontent-field hidden">
+                    <ui:VisualElement name="detailResizeHandle" class="vertical-resize-handle">
+                        <ui:VisualElement class="vertical-resize-grip" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="import-diff-header">
+                        <ui:VisualElement class="import-diff-title-group">
+                            <ui:Label text="Entry Detail" class="detailcontent-field-title" />
+                        </ui:VisualElement>
+                        <ui:Button name="btnDetailClose" text="X" class="import-diff-close-button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1;margin-bottom: 8px;margin-top: 5px;">
+                        <ui:IntegerField name="charLimitField" label="char limit" value="0" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="comment">
+                        <ui:TextField name="commentField" class="comment-field" label="comment" value="" multiline="true" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="screenShot">
+                        <ui:Label text="ScreenShot" class="screenShot-label" />
+                        <ui:VisualElement name="ScreenShotPic" class="screenShot-pic">
+                            <ui:Label name="ScreenShotLoading" text="Loading" class="screenShot-loading hidden" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="screenShot-section">
+                            <ui:Button name="btnScreenShot" text="ScreenShot" class="screenShot-button action-button" style="margin: 0;" />
+                            <ui:Button name="btnScreenShotDel" text="Delete" class="screenShotDel-button action-button" style="margin: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:ScrollView name="settingsTabContent" mode="Vertical" class="tab-content hidden">
+            <ui:VisualElement class="section">
+                <ui:Label text="Server Configurations:" class="section-label" />
+                <ui:ScrollView name="configListScrollView" class="config-list-scroll">
+                    <ui:VisualElement name="configListContent" class="config-list-content" />
+                </ui:ScrollView>
+                <ui:Button name="btnAddConfig" text="+ Add New Config" class="add-config-button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="configEditorSection" class="section config-editor-section hidden">
+                <ui:Label text="Edit Configuration:" class="section-label" />
+                <ui:VisualElement class="config-field">
+                    <ui:Label text="Name:" class="field-label" />
+                    <ui:TextField name="configNameField" class="text-field" />
+                </ui:VisualElement>
+                <ui:VisualElement class="config-field">
+                    <ui:Label text="Endpoint URL:" class="field-label" />
+                    <ui:TextField name="configHookUrlField" class="text-field" />
+                </ui:VisualElement>
+                <ui:VisualElement class="config-field">
+                    <ui:Label text="Access Token:" class="field-label" />
+                    <ui:TextField name="configApiKeyField" password="true" class="text-field" />
+                </ui:VisualElement>
+                <ui:Button name="btnPasteConifg" text="Paste from Clipboard" class="paste-from-clipboard-button" />
+                <ui:VisualElement class="config-button-row">
+                    <ui:Button name="btnTestConnect" text="Test Connect" class="action-button test-connect-button" />
+                    <ui:Button name="btnSaveConfig" text="Save" class="action-button save-button" />
+                    <ui:Button name="btnDeleteConfig" text="Delete" class="action-button delete-button" />
+                    <ui:Button name="btnCancelConfig" text="Cancel" class="action-button cancel-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="section" style="flex-direction:row;">
+                <ui:Label text="Branch:" class="section-label" />
+                <ui:VisualElement name="batchDropdownContainer" class="dropdown" />
+            </ui:VisualElement>
+            <ui:Label text="Element Highlighter:" class="section-label" />
+            <ui:VisualElement class="section highlighter-settings-section">               
+                <ui:VisualElement class="config-field">
+                    <ui:Label text="Mode:" class="field-label" />
+                    <ui:VisualElement name="highlighterModeContainer" class="highlighter-control" />
+                </ui:VisualElement>
+                <ui:VisualElement name="highlighterBorderSettings">
+                    <ui:VisualElement class="config-field">
+                        <ui:Label text="Border Color:" class="field-label" />
+                        <ui:VisualElement name="highlighterBorderColorContainer" class="highlighter-control" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="config-field">
+                        <ui:Label text="Border Thickness:" class="field-label" />
+                        <ui:VisualElement name="highlighterBorderThicknessContainer" class="highlighter-control" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="highlighterArrowSettings">
+                    <ui:VisualElement class="config-field">
+                        <ui:Label text="Arrow Color:" class="field-label" />
+                        <ui:VisualElement name="highlighterArrowColorContainer" class="highlighter-control" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="config-field">
+                        <ui:Label text="Arrow Size:" class="field-label" />
+                        <ui:VisualElement name="highlighterArrowSizeContainer" class="highlighter-control" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <Label name="openDoc" text="https://eu.eciflow.net/docs" class="link-label" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

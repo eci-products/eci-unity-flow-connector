@@ -1,0 +1,5 @@
+*.cs text eol=crlf
+*.uxml text eol=crlf
+*.uss text eol=crlf
+*.asmdef text eol=crlf
+*.json text eol=crlf

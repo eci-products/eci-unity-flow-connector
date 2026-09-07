@@ -1,0 +1,28 @@
+{
+  "name": "net.eciflow.unity",
+  "displayName": "Flow Unity Connector",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "author": "ECI Products Team",
+  "description": "Unity Localization editor toolkit with ECI Flow connectivity — export, import diff resolution, term browsing, runtime UI anchoring, and screenshot markup.",
+  "documentationUrl":"https://eu.eciflow.net/docs/lcms/flow-connector.html",
+  "dependencies": {
+    "com.unity.localization": "1.5.3",
+    "com.unity.nuget.newtonsoft-json": "3.2.2"
+  },
+  "samples": [
+    {
+      "displayName": "Demo Scene",
+      "description": "Eci Flow Connector Samples Scene",
+      "path": "Samples~/Demo"
+    }
+  ],
+  "files": [
+    "package.json",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "Runtime/**",
+    "Editor/**",
+    "Samples~/**"
+  ]
+}

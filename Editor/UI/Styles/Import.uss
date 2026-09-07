@@ -1,0 +1,284 @@
+/* 导入差异：差异列表、解决策略和合并操作。 */
+.import-diff-panel {
+    height: 560px;
+    min-height: 220px;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: rgb(34, 34, 34);
+    border-width: 1px;
+    border-top-width: 3px;
+    border-color: rgb(109, 88, 140);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.import-diff-header {
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.import-diff-title-group {
+    flex-grow: 1;
+}
+
+.import-diff-title {
+    color: rgb(214, 190, 230);
+    font-size: 15px;
+    -unity-font-style: bold;
+}
+
+.import-diff-summary {
+    margin-top: 3px;
+    color: rgb(164, 164, 164);
+    font-size: 11px;
+    white-space: normal;
+}
+
+.import-diff-close-button {
+    width: 28px;
+    height: 24px;
+    margin-left: 8px;
+    padding: 0;
+    background-color: rgb(58, 58, 58);
+    color: rgb(190, 190, 190);
+    border-width: 1px;
+    border-color: rgb(76, 76, 76);
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.import-diff-close-button:hover {
+    background-color: rgb(90, 61, 61);
+    color: rgb(235, 180, 180);
+}
+
+.import-diff-toolbar {
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+.import-diff-toolbar-button {
+    flex-grow: 1;
+    height: 28px;
+    margin-right: 6px;
+    border-width: 1px;
+    border-radius: 3px;
+    -unity-font-style: bold;
+}
+
+.import-keep-button {
+    background-color: rgb(45, 58, 74);
+    color: rgb(130, 184, 216);
+    border-color: rgb(61, 74, 90);
+}
+
+.import-remote-button {
+    background-color: rgb(58, 45, 74);
+    color: rgb(196, 145, 218);
+    border-color: rgb(74, 61, 90);
+}
+
+.import-diff-scroll {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-height: 80px;
+    background-color: rgb(27, 27, 27);
+    border-width: 1px;
+    border-color: rgb(61, 61, 61);
+    border-radius: 4px;
+}
+
+.import-diff-content {
+    padding: 8px;
+}
+
+.import-entry-card {
+    margin-bottom: 10px;
+    background-color: rgb(39, 39, 39);
+    border-width: 1px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 4px;
+}
+
+.import-entry-header {
+    padding: 8px;
+    background-color: rgb(48, 48, 48);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(68, 68, 68);
+}
+
+.import-entry-title-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.import-entry-title {
+    flex-grow: 1;
+    color: rgb(226, 226, 226);
+    font-size: 12px;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.import-entry-actions {
+    flex-direction: row;
+    margin-top: 6px;
+}
+
+.import-entry-action-button {
+    height: 24px;
+    margin-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.import-version-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.import-version-label {
+    flex-grow: 1;
+    color: rgb(160, 160, 160);
+    font-size: 10px;
+    white-space: normal;
+    width:70px;
+}
+
+.import-version-popup {
+    width: 150px;
+    min-width: 150px;
+    margin-left: 8px;
+}
+
+.import-cell-card {
+    padding: 8px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(57, 57, 57);
+}
+
+.import-cell-heading {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.import-locale-label {
+    color: rgb(220, 220, 220);
+    font-size: 11px;
+    -unity-font-style: bold;
+}
+
+.import-state-label {
+    margin-left: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: rgb(190, 190, 190);
+    font-size: 9px;
+    -unity-font-style: bold;
+}
+
+.import-state-conflict {
+    color: rgb(230, 130, 130);
+}
+
+.import-state-changed {
+    color: rgb(222, 188, 112);
+}
+
+.import-state-local {
+    color: rgb(120, 174, 214);
+}
+
+.import-state-remote {
+    color: rgb(126, 210, 160);
+}
+
+.import-value-columns {
+    flex-direction: row;
+}
+
+.import-value-column {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    margin-right: 5px;
+}
+
+.import-value-column-title {
+    margin-bottom: 3px;
+    color: rgb(145, 145, 145);
+    font-size: 9px;
+    -unity-font-style: bold;
+}
+
+.import-value-field {
+    min-height: 46px;
+    max-height: 100px;
+    white-space: normal;
+}
+
+.import-missing-value {
+    color: rgb(110, 110, 110);
+    -unity-font-style: italic;
+}
+
+.import-resolution-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.import-resolution-label {
+    width: 50px;
+    min-width: 50px;
+    color: rgb(170, 170, 170);
+    font-size: 10px;
+}
+
+.import-resolution-popup {
+    flex-grow: 0;
+    width: 100px;
+}
+
+.import-custom-value {
+    margin-top: 5px;
+    min-height: 45px;
+}
+
+.import-diff-validation {
+    min-height: 18px;
+    flex-shrink: 0;
+    margin-top: 7px;
+    color: rgb(222, 188, 112);
+    font-size: 10px;
+    white-space: normal;
+}
+
+.import-diff-validation-ready {
+    color: rgb(111, 207, 151);
+}
+
+.import-diff-validation-error {
+    color: rgb(230, 130, 130);
+}
+
+.import-diff-footer {
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    margin-top: 4px;
+}
+
+.import-diff-footer .action-button {
+    max-width: 180px;
+}

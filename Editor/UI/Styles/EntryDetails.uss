@@ -1,0 +1,52 @@
+/* 词条详情：字符限制、备注和详情面板。 */
+TextField.comment-field {
+    flex-direction: column;
+    align-items: stretch;
+    padding:0;
+    margin:0;
+}
+
+TextField.comment-field .unity-label {
+    flex-grow:1;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(68, 68, 68);
+    background-color: rgb(51, 51, 51);
+    -unity-text-align: upper-center;
+}
+
+TextField.comment-field .unity-text-field__input {
+    height: 160px;
+    min-height: 120px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgb(25, 25, 25);
+}
+
+.comment {
+    flex-shrink: 0;
+    background-color: rgb(25, 25, 25);
+    border-width: 1px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/* Import 瀹割喖绱撻棃銏℃緲閿涙碍鏆ｆ担鎾愁啇閸ｃ劊鈧礁浼愰崗閿嬬埉閵嗕笒ntry 閸楋紕澧栭崣濠傚礋閸忓啯鐗哥€靛湱鍙庨崠鍝勭厵閵?*/
+.detailcontent-field {
+    height: 520px;
+    min-height: 160px;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: rgb(34, 34, 34);
+    border-width: 1px;
+    border-top-width: 3px;
+    border-color: rgb(49, 66, 163);
+    border-radius: 4px;
+}
+
+.detailcontent-field-title {
+    color: rgb(107, 127, 219);
+    font-size: 15px;
+    -unity-font-style: bold;
+}

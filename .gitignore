@@ -1,0 +1,62 @@
+# ===== Unity 编辑器生成（包内开发时也会冒出来）=====
+/Library/
+/Temp/
+/Logs/
+/UserSettings/
+/MemoryCaptures/
+/Recordings/
+
+# 如果在包根临时放过 Unity 工程测试
+/[Ll]ibrary/
+/[Tt]emp/
+
+# ===== 自动生成的 VS / Rider 工程文件 =====
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.booproj
+*.svd
+.vs/
+.idea/
+.vscode/
+*.tmp
+
+# ===== UPM / npm 系（如果你用 upm pack / npm pack）=====
+node_modules/          # 包里一般不会有，但混用工具时防一手
+*.tgz                  # 打出来的 com.xxx-0.1.0.tgz 别进库，用 tag 控版本
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 注意：package.json 必须提交；packages-lock.json 是【项目级】产物，
+# 独立包仓库里通常不会生成，若生成也提交，别忽略
+
+# ===== Unity 特殊目录 =====
+# Samples~ 是隐藏目录，要进库（带波浪号 Unity 不导入，但 git 要跟踪）
+# 所以不要忽略 Samples~，也不要忽略里头的 .meta
+!*/Samples~/**/*.meta
+
+# 测试产物
+/TestResults/
+*.bin
+
+# ===== OS 垃圾 =====
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== 本地密钥/配置 =====
+*.local.asset
+secrets.json
+.env

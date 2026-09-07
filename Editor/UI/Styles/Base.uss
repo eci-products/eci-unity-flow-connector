@@ -1,0 +1,173 @@
+/* 基础样式：窗口、标签页、通用字段和基础布局。 */
+.main-container {
+    padding: 15px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.header {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(147, 122, 85);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(51, 51, 51);
+}
+
+.tab-bar {
+    flex-direction: row;
+    margin-bottom: 15px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(51, 51, 51);
+}
+
+.tab-button {
+    padding: 8px 20px;
+    margin-right: 5px;
+    background-color: rgb(45, 45, 45);
+    border-width: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(136, 136, 136);
+    -unity-font-style: bold;
+}
+
+.tab-button:hover {
+    background-color: rgb(61, 61, 61);
+    color: rgb(204, 204, 204);
+}
+
+.tab-active {
+    background-color: rgb(147, 122, 85);
+    color: white;
+}
+
+.tab-active:hover {
+    background-color: rgb(166, 138, 98);
+    color: white;
+}
+
+.tab-content {
+    flex-grow: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.vertical-resize-handle {
+    height: 12px;
+    min-height: 12px;
+    margin-top: -9px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: resize-vertical;
+}
+
+.vertical-resize-grip {
+    width: 52px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgb(82, 82, 82);
+}
+
+.vertical-resize-handle:hover .vertical-resize-grip {
+    height: 4px;
+    background-color: rgb(147, 122, 85);
+}
+
+.section {
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.section-label {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: rgb(204, 204, 204);
+    margin-bottom: 5px;
+}
+
+.row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown {
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.screenShot-label {
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(68, 68, 68);
+    background-color: rgb(51, 51, 51);
+    -unity-text-align: upper-center;
+}
+
+.screenShot-section {
+    background-color: rgb(51, 51, 51);
+    flex-direction: row;
+}
+
+.screenShot {
+    flex-shrink: 0;
+    background-color: rgb(25, 25, 25);
+    border-width: 1px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 4px;
+}
+
+.screenShot-pic {
+    height: 220px;
+    min-height: 120px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.screenShot-loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.82);
+    color: rgb(205, 181, 143);
+    font-size: 13px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.popup-field {
+    background-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.popup-field:hover {
+    border-color: rgb(147, 122, 85);
+}
+
+.text-field {
+    background-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 4px;
+    flex-shrink: 1;
+    min-width: 150px;
+    color: rgb(255, 255, 255);
+    min-height: 25px;
+}
+
+.text-field:hover {
+    border-color: rgb(147, 122, 85);
+}
+
+.text-field:focus {
+    border-color: rgb(147, 122, 85);
+}

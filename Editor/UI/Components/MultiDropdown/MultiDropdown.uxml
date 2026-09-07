@@ -1,0 +1,12 @@
+<UXML xmlns="UnityEngine.UIElements"
+      xmlns:uie="UnityEditor.UIElements">
+
+    <VisualElement style="flex-direction: row; align-items: center;">
+        <Label name="label" style="width: 80px; margin-right: 4px;" />
+        <Button name="dropdownBtn"
+                text="Unselected"
+                style="flex-grow: 1; height: 20px;
+                       unity-text-align: middle-left;" />
+    </VisualElement>
+
+</UXML>

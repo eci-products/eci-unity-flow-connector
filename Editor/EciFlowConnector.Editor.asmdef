@@ -1,0 +1,21 @@
+{
+    "name": "EciFlowConnector.Editor",
+    "rootNamespace": "EciFlowConnector",
+    "references": [
+        "EciFlowConnector.Runtime",
+        "Unity.Localization",
+        "Unity.Localization.Editor",
+        "Unity.ResourceManager"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

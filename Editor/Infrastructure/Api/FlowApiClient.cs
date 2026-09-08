@@ -33,8 +33,7 @@ internal sealed class FlowApiClient
     {
         using var handler = new HttpClientHandler
         {
-            SslProtocols = System.Security.Authentication.SslProtocols.Tls12 |
-                           System.Security.Authentication.SslProtocols.Tls13
+            SslProtocols = System.Security.Authentication.SslProtocols.None
         };
 
         using (var client = new HttpClient(handler))
@@ -64,8 +63,7 @@ internal sealed class FlowApiClient
     {
         using var handler = new HttpClientHandler
         {
-            SslProtocols = System.Security.Authentication.SslProtocols.Tls12 |
-                           System.Security.Authentication.SslProtocols.Tls13
+            SslProtocols = System.Security.Authentication.SslProtocols.None
         };
 
         using (var client = new HttpClient(handler))

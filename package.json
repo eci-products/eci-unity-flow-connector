@@ -1,7 +1,7 @@
 {
   "name": "net.eciflow.unity",
   "displayName": "Flow Unity Connector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2022.3",
   "author": "ECI Products Team",
   "description": "Unity Localization editor toolkit with ECI Flow connectivity — export, import diff resolution, term browsing, runtime UI anchoring, and screenshot markup.",

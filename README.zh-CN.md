@@ -6,7 +6,7 @@
   <a href="README.md">English</a> · 中文
 </p>
 
-# Flow Unity Connector（中文）
+# Flow Unity Connector
 
 Flow Unity Connector 是一款 Unity 插件，用于对齐 Unity Localization 中的内容与 Flow 项目中的内容。
 

@@ -2,9 +2,7 @@
     "name": "EciFlowConnector.Runtime",
     "rootNamespace": "EciFlowConnector",
     "references": [],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

@@ -2,6 +2,12 @@
   <img src="Documentation~/Images/flow-unity-connector-logo.png" alt="Flow Unity Connector logo" width="120">
 </p>
 
+<p align="center">
+  <a href="#english">English</a> · <a href="#chinese">中文</a>
+</p>
+
+<a id="english"></a>
+
 # Flow Unity Connector
 
 Flow Unity Connector is a Unity plugin designed to align content in Unity Localization with content in Flow projects.
@@ -42,7 +48,11 @@ If you cannot find Flow Connector, restart Unity. For help, contact [flowsupport
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the code structure and extension conventions.
 
+<p align="right"><a href="#chinese">切换至中文</a></p>
+
 ---
+
+<a id="chinese"></a>
 
 # Flow Unity Connector（中文）
 
@@ -83,3 +93,5 @@ Flow Unity Connector 是一款 Unity 插件，用于对齐 Unity Localization �
 ## 文档
 
 代码结构和扩展约定见 [ARCHITECTURE.md](ARCHITECTURE.md)。
+
+<p align="right"><a href="#english">Switch to English</a></p>

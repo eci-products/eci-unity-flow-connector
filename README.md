@@ -1,19 +1,47 @@
-# Eci Flow Connector
+<p align="center">
+  <img src="Documentation~/Images/flow-unity-connector-logo.png" alt="Flow Unity Connector logo" width="120">
+</p>
 
-面向 Unity Localization 的编辑器协作插件。它提供 Localization Table 浏览、服务端连接、导入差异解决、选择性导出、运行时 UI 定位、高亮以及截图和词条备注管理。
+<p align="center">
+  English · <a href="README.zh-CN.md">中文</a>
+</p>
 
-## 要求
+# Flow Unity Connector
 
-- Unity 2022.3 或更高版本
-- Unity Localization 1.5.3
-- Newtonsoft Json 3.2.1
+Flow Unity Connector is a Unity plugin designed to align content in Unity Localization with content in Flow projects.
 
-依赖已写入 `package.json`，通过 Unity Package Manager 安装本包时会自动解析。
+With Flow Unity Connector, you can push in-game content that requires localization to the Flow platform, together with related configuration requirements, comments, and screenshots.
 
-## 打开窗口
+## Installation
 
-在 Unity 菜单中选择 `Tools > ECI Flow Connector`。
+### Before you begin
 
-## 目录说明
+- Unity 2022.3 or later
+- We recommend installing and initializing [Unity Localization](https://docs.unity3d.com/Packages/com.unity.localization@1.5/manual/index.html) in your project before installing the connector. The connector will automatically resolve `com.unity.localization` 1.5.3.
+- Git installed locally and available as `git` from your terminal. This is required when installing with a Git URL.
+- This repository does not provide a `.unitypackage` or GitHub Release. Do not use **Assets > Import Package**.
 
-代码结构和扩展约定见 [ARCHITECTURE.md](ARCHITECTURE.md)。
+The Unity Package Manager resolves these dependencies automatically:
+
+- `com.unity.localization` 1.5.3
+- `com.unity.nuget.newtonsoft-json` 3.2.2
+
+### Recommended: Package Manager + Git URL
+
+1. Open your project with Unity 2022.3 or later.
+2. Go to **Window > Package Manager**.
+3. Select **+ > Add package from git URL...**.
+4. Paste the following URL:
+
+   ```text
+   https://github.com/eci-products/eci-unity-flow-connector.git
+   ```
+
+5. Select **Add** and wait for Unity to finish compiling.
+6. Open **Tools > ECI Flow Connector** to launch the window.
+
+If you cannot find Flow Connector, restart Unity. For help, contact [flowsupport@ecinnovations.com](mailto:flowsupport@ecinnovations.com).
+
+## Documentation
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for the code structure and extension conventions.

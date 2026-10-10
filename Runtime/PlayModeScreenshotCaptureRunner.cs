@@ -91,5 +91,5 @@ public sealed class PlayModeScreenshotCaptureRunner : MonoBehaviour
         failed?.Invoke(message);
     }
 }
-#endif
 }
+#endif
